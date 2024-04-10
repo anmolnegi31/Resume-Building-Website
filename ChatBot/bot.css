@@ -1,0 +1,128 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center align content */
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+.chat-container {
+    width: 90%;
+    max-width: 800px;
+    height: 86vh;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    margin: auto; /* Center container horizontally */
+    overflow: hidden;
+    margin-top: 25px;
+    display: block; /* Use block-level display */
+}
+
+/* Chat box styles */
+.chat-box {
+    height: 70vh; /* Set a fixed height for the chat box */
+    padding: 20px;
+    overflow-y: auto;
+    display: block; /* Use block-level display */
+}
+
+.chat-message {
+    margin-bottom: 15px;
+    display: block; /* Use block-level display for message containers */
+}
+
+.bot-message {
+    text-align: left; /* Align bot messages to left */
+}
+
+.user-message {
+    text-align: right; /* Align user messages to right */
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    display: inline-block; /* Use inline-block for profile pictures */
+    vertical-align: middle; /* Align profile pictures vertically */
+}
+
+.message-content {
+    display: inline-block; /* Use inline-block for message content */
+    max-width: 80%; /* Limit message width */
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.bot-message .message-content {
+    background-color: #7ec8e3;
+    color: #333;
+}
+
+.user-message .message-content {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Input container and input styles */
+.input-container {
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-top: 1px solid #ddd;
+    display: block; /* Use block-level display */
+}
+
+input[type="text"] {
+    width: calc(100% - 100px); /* Adjust input width with padding for button */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 16px;
+    display: inline-block; /* Use inline-block for input */
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #7ec8e3;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block; /* Use inline-block for button */
+}
+
+button:hover {
+    background-color: #5ca9cf;
+}
+
+/* Loading indicator styles */
+#loading-indicator {
+    text-align: center;
+    display: none; /* Hide loading indicator by default */
+}
+
+#loading-img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Code block styles */
+.message-content pre {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    display: block; /* Ensure block-level display for pre element */
+}
+
+.message-content code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    white-space: pre-wrap;
+}
