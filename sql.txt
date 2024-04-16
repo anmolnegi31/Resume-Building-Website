@@ -1,0 +1,50 @@
+CREATE DATABASE IF NOT EXISTS talentcrafters;
+
+USE talentcrafters;
+
+CREATE TABLE `contactus` (
+  `message_id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT,
+  `username` VARCHAR(50) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `message` text NOT NULL,
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`message_id`)
+);
+
+CREATE TABLE `users` (
+  `user_id` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(50) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `email_unique` (`email`)
+);
+
+CREATE TABLE `user_resumes` (
+  `resume_id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT,
+  `first_name` VARCHAR(50) NOT NULL,
+  `last_name` VARCHAR(50) NOT NULL,
+  `city` VARCHAR(100) NOT NULL,
+  `country` VARCHAR(100) NOT NULL,
+  `pincode` VARCHAR(20) NOT NULL,
+  `phone` VARCHAR(20) DEFAULT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `job_title` VARCHAR(100) DEFAULT NULL,
+  `college_name` VARCHAR(200) DEFAULT NULL,
+  `college_location` VARCHAR(200) DEFAULT NULL,
+  `degree` VARCHAR(100) DEFAULT NULL,
+  `field_of_study` VARCHAR(100) DEFAULT NULL,
+  `graduation_year` VARCHAR(20) DEFAULT NULL,
+  `company_name` VARCHAR(50) NOT NULL,
+  `company_city` VARCHAR(50) NOT NULL,
+  `Year_of_experience` INT NOT NULL,
+  `Proficient_in` VARCHAR(100) NOT NULL,
+  `additional_details` TEXT DEFAULT NULL,
+  `photo` VARCHAR(255) NOT NULL,
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`resume_id`),
+  FOREIGN KEY (`user_id`) REFERENCES `users`(`user_id`) ON DELETE CASCADE
+);
+
