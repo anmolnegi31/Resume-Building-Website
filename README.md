@@ -46,7 +46,7 @@ To run this project locally on your machine, follow these steps:
 
 ## Contributors
 
-- Aayush Kukreja (Backend Developer)
+- [Aayush Kukreja (Backend Developer)](https://github.com/Aayush6377)
 - Anmol Negi (Frontend Developer)
 - Kartik Mendiratta (AI Integration Specialist)
 
