@@ -33,7 +33,7 @@ To run this project locally on your machine, follow these steps:
 
 - **Move Files**: Move the contents of the cloned repository to the `htdocs` directory within your XAMPP installation directory (e.g., `C:\xampp\htdocs` for Windows).
 
-- **Access TalentCrafters**: Open a web browser and navigate to [http://localhost/talentcrafters](http://localhost/talentcrafters) to access TalentCrafters.
+- **Access TalentCrafters**: Open a web browser and navigate to [http://localhost/talentcrafters](.) to access TalentCrafters.
 
 ## Features
 
@@ -44,7 +44,7 @@ To run this project locally on your machine, follow these steps:
 - **Chatbot Assistance**: Get real-time support and answers through the chatbot.
 - **Career Roadmap & Job Suggestions**: Receive personalized career guidance and job recommendations using the Gemini API.
 - **Admin Dashboard**:
-  - Admins can access the dashboard at [http://localhost/talentcrafters/admin/](http://localhost/talentcrafters/admin/) with their credentials.
+  - Admins can access the dashboard at [http://localhost/talentcrafters/admin/](admin) with their credentials.
   - Default admin credentials: Username - `admin`, Password - `admin`.
   - **Dashboard Features**:
     - View and manage messages received from users.
