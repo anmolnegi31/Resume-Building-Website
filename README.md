@@ -57,7 +57,7 @@ To run this project locally on your machine, follow these steps:
 
 - [Aayush Kukreja (Backend Developer)](https://github.com/Aayush6377)
 - [Anmol Negi (Frontend Developer)](https://github.com/anmolnegi31)
-- Kartik Mendiratta (AI Integration Specialist)
+- [Kartik Mendiratta (AI Integration Specialist)](https://github.com/kartikmendiratta)
 
 ## Technologies Used
 
